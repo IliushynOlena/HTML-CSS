@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'robotoblack';
+    src: url('../fonts/BoldItalic/roboto-bolditalic-webfont.eot');
+    src: url('../fonts/BoldItalic/roboto-black-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BoldItalic/roboto-black-webfont.woff2') format('woff2'),
+         url('../fonts/BoldItalic/roboto-black-webfont.woff') format('woff'),
+         url('../fonts/BoldItalic/roboto-black-webfont.ttf') format('truetype'),
+         url('../fonts/BoldItalic/roboto-black-webfont.svg#robotoblack') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+$font-black: robotoblack;
