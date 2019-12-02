@@ -1,5 +1,17 @@
 header{
-    h1{
-        color: green;
+    .before-header{
+        background-color: $bgs-color-primary-1;
+        height: 58px;
+    }
+    .header-menu{
+        background-color: $bgs-color-primary-2;
+        height: 40px;
+    }
+    .after-header{
+        background-color: $bgs-color-primary-3;
+        height: 470px;
+    }
+    .footer-phone{
+        background-color: font-color-primary-1;
     }
 }
