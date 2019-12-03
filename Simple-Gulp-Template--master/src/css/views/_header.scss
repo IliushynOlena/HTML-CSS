@@ -1,17 +1,27 @@
 header{
+    
+    .top--image{
+        background-image: url("../../img/Svg/Bg\ Dark2.svg")
+    }
     .before-header{
         background-color: $bgs-color-primary-1;
         height: 58px;
+        width: 100%;
+        // background-size: 190%;
+        // background-position-y: 50%;
+        background-size: cover;
+        padding: 20px 0;
     }
     .header-menu{
         background-color: $bgs-color-primary-2;
         height: 40px;
+        width: 100%;
     }
     .after-header{
         background-color: $bgs-color-primary-3;
         height: 470px;
     }
-    .footer-phone{
-        background-color: font-color-primary-1;
+    .header--contact{
+        color: $font-color-primary-1;
     }
 }
