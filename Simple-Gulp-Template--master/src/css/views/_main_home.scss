@@ -1,3 +1,14 @@
-.title{
-    @include font(18px,$font-black, blue);
+main{
+    .home-page-calc {
+        background-color: $bgs-color-primary-4;
+        height: 110px;
+      }
+      .index-page-content{
+        background-color: $bgs-color-primary-7;
+        height: 2200px;
+      }
+      .home-him{
+        background-color: $bgs-color-primary-5;
+        height: 100px;
+      }
 }

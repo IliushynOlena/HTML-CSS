@@ -1,16 +1,19 @@
 header{
     
-    .top--image{
-        background-image: url("../../img/Svg/Bg\ Dark2.svg")
-    }
     .before-header{
         background-color: $bgs-color-primary-1;
         height: 58px;
         width: 100%;
-        // background-size: 190%;
-        // background-position-y: 50%;
+        background-image: url("../../img/Svg/Bg\ Dark2.svg");
         background-size: cover;
         padding: 20px 0;
+    }
+    .top--header_toll{
+        @include font(20px, $font-thin, $bgs-color-primary-5, 100);
+    }
+    .top--header-phone{
+        @include font(20px, $font-regular, $bgs-color-primary-5, 600);
+        text-decoration: none;
     }
     .header-menu{
         background-color: $bgs-color-primary-2;
@@ -18,10 +21,80 @@ header{
         width: 100%;
     }
     .after-header{
+        background-image: url("../../img/woman.svg");
         background-color: $bgs-color-primary-3;
         height: 470px;
     }
+    .LogoBestWriting{
+        position: relative;
+        left: -10px;
+        padding-top: 10px;
+    }
     .header--contact{
         color: $font-color-primary-1;
+    }
+    .top--header_butons {
+        text-align: right;
+        a {
+          text-align: left;
+        }
+        .btn--header_liveChat:hover {
+          background: url("../../img/Svg/Chat2.svg") no-repeat 100%;
+          color: $btn--color-primary_2--hover;
+        }
+        .btn--header_login:hover {
+          background: url("../../img/Svg/Login2.svg") no-repeat 100%;
+          color: $btn--color-primary_2--hover;
+        }
+        
+      }
+      a:first-child {
+        margin-right: 30px;
+    }
+    .btnBetter{
+        background-color: $btn--color-primary_1--hover;
+        color: $btn--color-primary_4;
+        &:after{
+            border-color: $btn--color-primary_1--hover transparent transparent;
+        }
+        &:hover{
+            background-color: $btn--color-primary_4;
+            color: $btn--color-primary_1--hover ;
+        }
+        &:hover::after{
+            border-color: $btn--color-primary_4 transparent transparent;
+    
+        }
+    }
+    .nav {
+        padding-top: 4px;
+        color: $font-color-primary-2;
+        width: 100%;
+        align-items: center;
+        font-family: $font-regular;
+        font-size: 22px;
+        text-transform: uppercase;
+        float: right;
+    }
+    
+    .nav__link {        
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 5px;
+        position: relative;     
+        color: $font-color-primary-2;
+        text-decoration: yellow;
+        transition: color .1s linear;
+    }
+    .nav__link:hover {
+        color: $font-color-primary-3;
+        background-color: $btn--color-primary_1--hover;
+        text-decoration: none;
+    }
+    .nav__link.active {
+        color: $font-color-primary-3; 
+        background-color: $btn--color-primary_1--hover
+        
+        ;
     }
 }
